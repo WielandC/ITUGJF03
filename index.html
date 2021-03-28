@@ -52,19 +52,19 @@
         </div>
         <div id="impress"> <div class="step"> <h5><strong>2021-03-31</strong> ZOOM-Universe </h5>
             <h5> <strong> <a href="https://www.itug.de/pages/aktuelles.html">ITUG Jour Fixe 02</a>
-            </strong> </h5> 
-            <h2 class="red down-100">Datei- und Projektnamen in TUSTEP</h2> 
-            <h3
-            class=" down-25">Nichtkonforme Namen</h3> 
-            <h5 class="down-25">Präsentation <a
-                href="https://itug.github.io/ITUGJF02" title="View the presentation online"
-                >https://itug.github.io/ITUGJF02</a><br/>Daten <a href="https://github.com/ITUG/ITUGJF02">https://github.com/ITUG/ITUGJF02</a><br/>Download <a href="https://github.com/ITUG/ITUGJF02/archive/refs/heads/main.zip">Präsentation und Daten</a> (zip)</h5> 
-            <h5 class="down-75"><strong><a
-                href="https://orcid.org/0000-0003-1904-1841" target="_blank">Thomas Kollatz</a> <br/></strong><a
-                    href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html" target="_blank"
-                    >Digital
-                    Academy</a>@<a href="http://www.adwmainz.de/en/home.html" target="_blank"
-            >Akademie der Wissenschaften und Literatur | Mainz</a><br /> <img
+            </strong> </h5> <h2 class="red down-100">Datei- und Projektnamen in TUSTEP</h2> <h3
+            class=" down-25">Nichtkonforme Namen</h3> <h5 class="down-25">Präsentation <a
+            href="https://itug.github.io/ITUGJF02" title="View the presentation online"
+            >https://itug.github.io/ITUGJF02</a><br />Daten <a
+            href="https://github.com/ITUG/ITUGJF02"
+            >https://github.com/ITUG/ITUGJF02</a><br />Download <a
+            href="https://github.com/ITUG/ITUGJF02/archive/refs/heads/main.zip"
+            >Präsentation und Daten</a> (zip)</h5> <h5 class="down-75"><strong><a
+            href="https://orcid.org/0000-0003-1904-1841" target="_blank">Thomas Kollatz</a>
+            <br /></strong><a href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html"
+            target="_blank">Digital
+                    Academy</a>@<a href="http://www.adwmainz.de/en/home.html"
+            target="_blank">Akademie der Wissenschaften und Literatur | Mainz</a><br /> <img
             src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" /> <a
             href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter" target="_blank"
             >@kol_t</a>
@@ -119,21 +119,18 @@
 
 files    = FILE_NAMES    (-,TUSTEP_DSK)
 projects = PROJECT_NAMES (TUSTEP_DSK)</code></pre> <p class="x-small right"
-            >Segment <code>basis01</code> aus <code>-*skripte</code></p> 
-          <h2 class="red"
+            >Segment <code>basis01</code> aus <code>-*skripte</code></p> <h2 class="red"
             >Ergebnis</h2> <pre><code>   3    00  files    = FILE_NAMES    (-,TUSTEP_DSK)
 files        = SKRIPTE'TEI.DEF'TUSTEP.INI
    4    00  projects = PROJECT_NAMES (TUSTEP_DSK)
-projects     = SCR</code></pre> </div> 
-            <div class="step"> <h2 class="red">TUSCRIPT</h2>
+projects     = SCR</code></pre> </div> <div class="step"> <h2 class="red">TUSCRIPT</h2>
             <pre><code>$$ MODE TUSCRIPT,{}
 
 FETCH root = TUSTEP_DSK
 files      = FILE_NAMES    (-,$root)
 projects   = PROJECT_NAMES ($root)</code></pre> <p class="x-small right"
-            >Segment <code>basis02</code> aus <code>-*skripte</code></p> 
-                <h2 class="red">Ergebnis</h2> 
-                <pre><code>   3    00  FETCH root = TUSTEP_DSK
+            >Segment <code>basis02</code> aus <code>-*skripte</code></p> <h2 class="red"
+            >Ergebnis</h2> <pre><code>   3    00  FETCH root = TUSTEP_DSK
 root         = ~/Downloads/impress/ITUGJF02/#2_material
    4    00  files      = FILE_NAMES    (-,$root)
 files        = *
@@ -145,11 +142,8 @@ files        = *
 projects     = *
            1 = 01.letters
            2 = 02.periodicals
-           3 = scr</code></pre>
-            </div> 
-            <div class="step">
-                <h2 class="red">TUSCRIPT</h2> 
-                <pre ><code>$$ MODE TUSCRIPT,{}
+           3 = scr</code></pre> </div> <div class="step"> <h2 class="red">TUSCRIPT</h2>
+            <pre><code>$$ MODE TUSCRIPT,{}
 
 FETCH root = TUSTEP_DSK
 newproject   ="2021-03-31"
@@ -157,18 +151,14 @@ newproject   ="2021-03-31"
 path2project =ADJUST_PATH(root,newproject)
 DEFINE path2project = path2project
 status=CREATE ("-",PROJECT,path2project)</code></pre> <p class="x-small right"
-            >Segment <code>basis03</code> aus <code>-*skripte</code></p>
-                <h2 class="red">Ergebnis</h2> 
-                <pre><code>   6    00  path2project =ADJUST_PATH(root,newproject)
+            >Segment <code>basis03</code> aus <code>-*skripte</code></p> <h2 class="red"
+            >Ergebnis</h2> <pre><code>   6    00  path2project =ADJUST_PATH(root,newproject)
 path2project = ~/Downloads/impress/ITUGJF02/#2_material/2021-03-31
    7    00  DEFINE path2project = path2project
    8    00  status=CREATE ("-",PROJECT,path2project)
-status       = OK
-
-</code></pre>
-            </div> 
-            <div class="step">
-            <h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+status       = OK</code></pre> </div> 
+            <div class="step"> <h2 class="red">TUSCRIPT</h2>
+            <pre><code>$$ MODE TUSCRIPT,{}
 
 FETCH root = TUSTEP_DSK
 newproject   ="2021-03-31"
@@ -179,18 +169,15 @@ path2file=ADJUST_PATH (path2project,newname)
 DEFINE "path2file" = path2file
 txtfile="path2file"
 status=CREATE (txtfile,FDF-o,-)</code></pre> <p class="x-small right"
-            >Segment <code>basis04</code> aus <code>-*skripte</code></p> 
-                <h2 class="red">Ergebnis</h2> 
-                <pre><code>   9    00  path2file=ADJUST_PATH (path2project,newname)
+            >Segment <code>basis04</code> aus <code>-*skripte</code></p> <h2 class="red"
+            >Ergebnis</h2> <pre><code>   9    00  path2file=ADJUST_PATH (path2project,newname)
 path2file    = ~/Downloads/impress/ITUGJF02/#2_material/2021-03-31/001 log.txt
   10    00  DEFINE "path2file" = path2file
   11    00  txtfile="path2file"
 txtfile      = path2file
   12    00  status=CREATE (txtfile,FDF-o,-)
-status       = OK</code></pre>
-            </div> 
-            <div class="step"><div class="row">
-            <div class="seven columns"><h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+status       = OK</code></pre> </div> <div class="step"><div class="row"> <div
+            class="seven columns"><h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
 
 FETCH root = TUSTEP_DSK
 newproject   ="2021-03-31"
@@ -204,12 +191,12 @@ status=CREATE (txtfile,FDF-o,-)
 
 FILE/ERASE/UTF8 $txtfile = "äöü"
 status=CLOSE (txtfile)</code></pre> <p class="x-small right"
-    >Segment <code>basis05</code> aus <code>-*skripte</code></p></div><div class="five columns"><figure class="mfp-lightbox even-left down-100"><a href="resources/img/FILEERASE.png"><img src="resources/img/FILEERASE.png" alt="FILE ERASE CONTENT"></a></figure>
-           </div> </div>
-               
-            </div>
-            <div class="step"><div class="row"><div class="seven columns">
-                <h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+            >Segment <code>basis05</code> aus <code>-*skripte</code></p></div><div
+            class="five columns"><figure class="mfp-lightbox even-left down-100"><a
+            href="resources/img/FILEERASE.png"><img src="resources/img/FILEERASE.png"
+            alt="FILE ERASE CONTENT"></a></figure> </div> </div> </div> <div class="step"><div
+            class="row"><div class="seven columns"> <h2 class="red">TUSCRIPT</h2>
+            <pre><code>$$ MODE TUSCRIPT,{}
 
 
 FETCH root = TUSTEP_DSK
@@ -221,14 +208,30 @@ path2tffile=ADJUST_PATH (path2project,newname)
 DEFINE "tffile" = path2tffile
 tffile="tffile"
 status=CREATE (tffile,SEQ-o,-)</code></pre> <p class="x-small right"
-                    >Segment <code>basis06</code> aus <code>-*skripte</code></p></div>
-                <div class="five columns"><figure class="mfp-lightbox even-left down-75"><a href="resources/img/tffile_li.png"><img src="resources/img/tffile_li.png" alt="liste tffile"></a></figure>
-                    <figure class="mfp-lightbox even-left up-25"><a href="resources/img/tffile_ed.png"><img src="resources/img/tffile_ed.png" alt="ediere tffile"></a></figure>
-                    <figure class="mfp-lightbox even-left up-25"><a href="resources/img/tffile_finder.png"><img src="resources/img/tffile_finder.png" alt="tffile im finder" ></a></figure>
-                </div></div>
-            </div>
-            <div class="step"><div class="row"><div class="seven columns">
-                <h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+            >Segment <code>basis06</code> aus <code>-*skripte</code></p></div> 
+                <div
+            class="five columns">
+                    <figure class="mfp-lightbox even-left down-75">
+                        <a
+            href="resources/img/tffile_li.png">
+                        <img src="resources/img/tffile_li.png"
+            alt="liste tffile"></a></figure> 
+                    <figure class="mfp-lightbox even-left up-25">
+                        <a
+            href="resources/img/tffile_ed.png">
+                            <img src="resources/img/tffile_ed.png"
+            alt="ediere tffile"></a></figure> 
+                    <figure class="mfp-lightbox even-left up-25"><a
+            href="resources/img/tffile_finder.png">
+                        <img src="resources/img/tffile_finder.png"
+            alt="tffile im finder"></a>
+                    </figure>
+                </div>
+            </div> 
+            </div> 
+            <div class="step"><div
+            class="row"><div class="seven columns"> <h2 class="red">TUSCRIPT</h2>
+            <pre><code>$$ MODE TUSCRIPT,{}
 FETCH root = TUSTEP_DSK
 projects=PROJECT_NAMES ($root)
 LOOP project=projects
@@ -245,11 +248,11 @@ LOOP project=projects
   status=CLOSE  (rtffile)
  ENDLOOP
 ENDLOOP</code></pre> <p class="x-small right"
-    >Segment <code>projectfiles</code> aus <code>-*skripte</code></p></div><div class="five columns"><figure class="mfp-lightbox even-left down-100"><a href="resources/img/loop_create.png"><img src="resources/img/loop_create.png" alt="LOOP CREATE"></a></figure>
-    </div> 
-                </div></div>
-            <div class="step">
-                <pre><code>$$ MODE TUSCRIPT,{}
+            >Segment <code>projectfiles</code> aus <code>-*skripte</code></p></div><div
+            class="five columns"><figure class="mfp-lightbox even-left down-100"><a
+            href="resources/img/loop_create.png"><img src="resources/img/loop_create.png"
+            alt="LOOP CREATE"></a></figure> </div> </div></div> <div class="step">
+            <pre><code>$$ MODE TUSCRIPT,{}
 status=OPEN ("tei.def",WRITE,-std-)
 FETCH root = TUSTEP_DSK
 projects=PROJECT_NAMES ($root)
@@ -277,19 +280,14 @@ LOOP project=projects
   status=CLOSE (rtffile), status=CLOSE (tffile)
  ENDLOOP
 ENDLOOP</code></pre> <p class="x-small right"
-                    >Segment <code>ex_xml2rtf</code> aus <code>-*skripte</code></p> 
-                
-            </div>
-          <!--  <div class="step">
+            >Segment <code>ex_xml2rtf</code> aus <code>-*skripte</code></p> </div>
+            <!--  <div class="step">
                 <h2 class="red">TUSCRIPT</h2> <pre><code></code></pre> <p class="x-small right"
                     >Segment <code>basis01</code> aus <code>-*skripte</code></p> 
                 <h2 class="red">Ergebnis</h2> 
                 <pre><code></code></pre>
-            </div>-->
-            <div class="step">
-            <h1 class="red">*eof</h1> </div>
-                                .
-                                
+            </div>--> <div class="step"> <h1 class="red">*eof</h1> </div>
+                                                    
                      
                         
                 
@@ -312,7 +310,7 @@ ENDLOOP</code></pre> <p class="x-small right"
         <!-- highlight -->
         <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
         <script>
-            hljs.initHighlightingOnLoad();</script>    
+            hljs.initHighlightingOnLoad();</script>
         <script src="resources/js/hljs.linenumbering.js"></script>
         <!-- swiper -->
         <script src="vendor/swiper/swiper.min.js"></script>
@@ -358,6 +356,5 @@ videoStep.addEventListener("impress:stepleave", function() {
                 },
                 false);
             });</script>
-       
     </body>
 </html>
