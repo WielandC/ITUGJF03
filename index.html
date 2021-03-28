@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ITUG JOUR FIXE 02</title>
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+        <!-- styles for included libraries -->
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        <!-- hint styles -->
+        <link href="resources/css/hint.css" rel="stylesheet" />
+        <!-- js needed in head -->
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js"></script>
+    </head>
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress"> <div class="step"> <h5><strong>2021-03-31</strong> ZOOM-Universe </h5>
+            <h5> <strong> <a href="https://www.itug.de/pages/aktuelles.html"> ITUG Jour Fixe 02</a>
+            </strong> </h5> <h2 class="red down-100">Datei- und Projektnamen in TUSTEP</h2> <h3
+            class=" down-25"></h3> <h5 class="down-25"> online <a
+            href="https://itug.github.io/jourfixe02" title="View the presentation online"
+            >https://itug.github.io/jourfixe02</a> </h5> <h5 class="down-75"> <strong> <a
+            href="https://orcid.org/0000-0003-1904-1841" target="_blank">Thomas Kollatz</a>
+                        | <a href="http://www.adwmainz.de/en/home.html" target="_blank"
+            >Akademie der Wissenschaften und Literatur | Mainz</a> |
+                    </strong> <a
+            href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html" target="_blank"
+            >Digital
+                        Academy</a> <br /> <img
+            src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" /> <a
+            href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter" target="_blank"
+            >@kol_t</a> <a href="https://twitter.com/kol_t" title="epidat on Twitter"
+            target="_blank">@_epidat</a>
+            <!--  <img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                            class="twitter-icon" />
+                        <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter"
+                            >@kol_t</a> -->
+            <!--<a href="https://twitter.com/digicademy" title="Digitale Akademie"
+                            >@digicademy</a>-->
+            <!--  <img src="resources/img/Octicons-mark-github.svg" alt="Twitter"
+                            class="gh-icon" />
+                        <a href="https://github.com/digicademy" title="digicademy on GitHub"
+                            >digicademy</a>-->
+ | <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> </h5> </div>
+            <!-- div.step--> <div class="step"> <h2 class="red">Gültige Projektnamen</h2> <dl
+            class="line-height-one-five"> <dt>Projektnamen</dt>
+            <dd> darf […] aus 1 bis 8 Zeichen (Buchstaben a bis z, Ziffern, Minuszeichen und »_«) bestehen, muss mit einem Buchstaben beginnen und darf nicht mit Minuszeichen oder »_« enden.</dd>
+            <dd class="centered"
+            ><q>Projekt</q> == <q>Verzeichnis</q> == <q>Ordner</q> == <q>directory</q> <dd
+            class="centered"> <code>dirname</code> <dd class="right">Handbuch 25</dd> </dl>
+            </div> <div class="step"> <h2 class="red">Gültige Dateinamen</h2> <dl
+            class="line-height-one-five"> <dt>Dateinamen</dt> <dd>
+                        dürfen in TUSTEP aus 1 bis 12 Zeichen (Buchstaben a bis z, Ziffern, Minuszeichen und »_«) bestehen, müssen mit einem Buchstaben beginnen und dürfen nicht mit Minuszeichen oder »_« enden. Solche Dateinamen können noch mit einer Namenserweiterung (Extension) versehen werden. Diese wird durch einen Punkt getrennt an den Dateinamen angehängt. Sie darf in TUSTEP aus 1 bis 4 Zeichen (Buchstaben a bis z, Ziffern, Minuszeichen und »_«) bestehen und darf nicht mit Minuszeichen oder »_« enden. 
+                    </dd> <dd class="right">Handbuch 26</dd> <dd class="centered">
+            <code>dateiname.tf</code> </dd> </dl> </div> <div class="step"> <h2 class="red"
+            >#*desi</h2> <div class="row"> <div class="four columns"> <figure
+            class="mfp-lightbox even-left"> <a href="resources/img/desi.png"> <img
+            src="resources/img/desi.png" alt="desi"> </a> </figure> <figure
+            class="mfp-lightbox even-left"> <a href="resources/img/finder.png"> <img
+            src="resources/img/finder.png" alt="finder"> </a> </figure> </div> <div
+            class="eight columns"> <ul class="line-height-one-five even-left ">
+            <li>Mit dem Standardmakro <code>#*desi</code> können den Systemvariablen <code>TUSTEP_DSK</code> und <code>TUSTEP_SCR</code> mit <q> ungültige Dateinamen</q> zugewiesen werden.</li>
+            </ul> </div> </div> </div> <div class="step">
+            <!--<h2 class="red">Arbeitsumgebung </h2>
+                    <pre><code>$ pwd
+/Users/air11neu/Downloads/impress/itugJF02
+                    </code></pre>--> <h2 class="red">Arbeitsumgebung</h2>
+            <h3>Gültige und ungültige Projekt- und Dateinamen</h3> <pre><code>#2_material/
+├── 01.letters
+│   ├── Q.01.19140115.FMA.01.xml
+│   └── Q.01.19140518.GAP.01.xml
+├── 02.periodicals
+├── 04\ ein\ wahrlich\ schau3rl!cherDateiname.01.xml
+├── scr
+├── skripte
+├── tei.def
+└── tustep.ini
+
+3 directories, 6 files
+</code></pre> <p class="x-small right">Download <a href="http://github.com/itug/"
+            >github</a></p> </div> <div class="step"> <dl><dt class="red"
+            >#liste,variable,po=TUSTEP_DSK'TUSTEP_SCR</dt><dd>
+            <pre><code>****  Mögliche System-Variablen
+      TUSTEP_DSK           ~/Downloads/impress/ITUGJF02/#2_material
+      TUSTEP_SCR           ~/Downloads/impress/ITUGJF02/#2_material/scr</code></pre></dd>
+            <dt class="red">#liste,projekt</dt><dd>
+            <pre><code>****  1 von 3 Projekten auf TRAEGER = TUSTEP_DSK
+      SCR</code></pre></dd> <dt class="red">#liste,dateinamen</dt> <dd>
+            <pre><code>****  3 von 4 Dateien mit  PROJEKT = -  und  TRAEGER = TUSTEP_DSK
+      SKRIPTE       TEI.DEF       TUSTEP.INI</code></pre></dd> </dl></div> <div
+            class="step"> <h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+
+files    = FILE_NAMES    (-,TUSTEP_DSK)
+projects = PROJECT_NAMES (TUSTEP_DSK)</code></pre> <p class="x-small right"
+            >Segment <code>basis01</code> aus <code>-*skripte</code></p> 
+          <h2 class="red"
+            >Ergebnis</h2> <pre><code>   3    00  files    = FILE_NAMES    (-,TUSTEP_DSK)
+files        = SKRIPTE'TEI.DEF'TUSTEP.INI
+   4    00  projects = PROJECT_NAMES (TUSTEP_DSK)
+projects     = SCR</code></pre> </div> 
+            <div class="step"> <h2 class="red">TUSCRIPT</h2>
+            <pre><code>$$ MODE TUSCRIPT,{}
+
+FETCH root = TUSTEP_DSK
+files      = FILE_NAMES    (-,$root)
+projects   = PROJECT_NAMES ($root)</code></pre> <p class="x-small right"
+            >Segment <code>basis02</code> aus <code>-*skripte</code></p> 
+                <h2 class="red">Ergebnis</h2> 
+                <pre><code>   3    00  FETCH root = TUSTEP_DSK
+root         = ~/Downloads/impress/ITUGJF02/#2_material
+   4    00  files      = FILE_NAMES    (-,$root)
+files        = *
+           1 = 04 ein wahrlich schau3rl!cherDateiname.01.xml
+           2 = skripte
+           3 = tei.def
+           4 = tustep.ini
+   5    00  projects   = PROJECT_NAMES ($root)
+projects     = *
+           1 = 01.letters
+           2 = 02.periodicals
+           3 = scr</code></pre>
+            </div> 
+            <div class="step">
+                <h2 class="red">TUSCRIPT</h2> 
+                <pre ><code>$$ MODE TUSCRIPT,{}
+
+FETCH root = TUSTEP_DSK
+newproject   ="2021-03-31"
+
+path2project =ADJUST_PATH(root,newproject)
+DEFINE path2project = path2project
+status=CREATE ("-",PROJECT,path2project)</code></pre> <p class="x-small right"
+            >Segment <code>basis03</code> aus <code>-*skripte</code></p>
+                <h2 class="red">Ergebnis</h2> 
+                <pre><code>   6    00  path2project =ADJUST_PATH(root,newproject)
+path2project = ~/Downloads/impress/ITUGJF02/#2_material/2021-03-31
+   7    00  DEFINE path2project = path2project
+   8    00  status=CREATE ("-",PROJECT,path2project)
+status       = OK
+
+</code></pre>
+            </div> 
+            <div class="step">
+            <h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+
+FETCH root = TUSTEP_DSK
+newproject   ="2021-03-31"
+path2project =ADJUST_PATH(root,newproject)
+newname="001 log.txt"
+
+path2file=ADJUST_PATH (path2project,newname)
+DEFINE "path2file" = path2file
+txtfile="path2file"
+status=CREATE (txtfile,FDF-o,-)</code></pre> <p class="x-small right"
+            >Segment <code>basis04</code> aus <code>-*skripte</code></p> 
+                <h2 class="red">Ergebnis</h2> 
+                <pre><code>   9    00  path2file=ADJUST_PATH (path2project,newname)
+path2file    = ~/Downloads/impress/ITUGJF02/#2_material/2021-03-31/001 log.txt
+  10    00  DEFINE "path2file" = path2file
+  11    00  txtfile="path2file"
+txtfile      = path2file
+  12    00  status=CREATE (txtfile,FDF-o,-)
+status       = OK</code></pre>
+            </div> 
+            <div class="step"><div class="row">
+            <div class="seven columns"><h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+
+FETCH root = TUSTEP_DSK
+newproject   ="2021-03-31"
+path2project =ADJUST_PATH(root,newproject)
+newname="001 log.txt"
+
+path2file=ADJUST_PATH (path2project,newname)
+DEFINE "path2file" = path2file
+txtfile="path2file"
+status=CREATE (txtfile,FDF-o,-)
+
+FILE/ERASE/UTF8 $txtfile = "äöü"
+status=CLOSE (txtfile)</code></pre> <p class="x-small right"
+    >Segment <code>basis05</code> aus <code>-*skripte</code></p></div><div class="five columns"><figure class="mfp-lightbox even-left down-100"><a href="resources/img/FILEERASE.png"><img src="resources/img/FILEERASE.png" alt="FILE ERASE CONTENT"></a></figure>
+           </div> </div>
+               
+            </div>
+            <div class="step"><div class="row"><div class="seven columns">
+                <h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+
+
+FETCH root = TUSTEP_DSK
+newproject   ="2021-03-31"
+path2project =ADJUST_PATH(root,newproject)
+
+newname="001 log.tf"
+path2tffile=ADJUST_PATH (path2project,newname)
+DEFINE "tffile" = path2tffile
+tffile="tffile"
+status=CREATE (tffile,SEQ-o,-)</code></pre> <p class="x-small right"
+                    >Segment <code>basis06</code> aus <code>-*skripte</code></p></div>
+                <div class="five columns"><figure class="mfp-lightbox even-left down-75"><a href="resources/img/tffile_li.png"><img src="resources/img/tffile_li.png" alt="liste tffile"></a></figure>
+                    <figure class="mfp-lightbox even-left up-25"><a href="resources/img/tffile_ed.png"><img src="resources/img/tffile_ed.png" alt="ediere tffile"></a></figure>
+                    <figure class="mfp-lightbox even-left up-25"><a href="resources/img/tffile_finder.png"><img src="resources/img/tffile_finder.png" alt="tffile im finder" ></a></figure>
+                </div></div>
+            </div>
+            <div class="step"><div class="row"><div class="seven columns">
+                <h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
+FETCH root = TUSTEP_DSK
+projects=PROJECT_NAMES ($root)
+LOOP project=projects
+ IF (project.nc." letters ") CYCLE
+ path2files=ADJUST_PATH (root,project)
+ files=FILE_NAMES (-,$path2files)
+ xmlfiles=FILTER (files," *.xml ",-)
+ LOOP xmlfile=xmlfiles
+  rtffile=EXCHANGE (xmlfile,"|.xml|.rtf|")
+  path2rtffile=ADJUST_PATH (path2files,rtffile)
+  DEFINE "rtffile" = path2rtffile
+  rtffile="rtffile"
+  status=CREATE (rtffile,FDF-o,-)
+  status=CLOSE  (rtffile)
+ ENDLOOP
+ENDLOOP</code></pre> <p class="x-small right"
+    >Segment <code>projectfiles</code> aus <code>-*skripte</code></p></div><div class="five columns"><figure class="mfp-lightbox even-left down-100"><a href="resources/img/loop_create.png"><img src="resources/img/loop_create.png" alt="LOOP CREATE"></a></figure>
+    </div> 
+                </div></div>
+            <div class="step">
+                <pre><code>$$ MODE TUSCRIPT,{}
+status=OPEN ("tei.def",WRITE,-std-)
+FETCH root = TUSTEP_DSK
+projects=PROJECT_NAMES ($root)
+LOOP project=projects
+ IF (project.nc." letters ") CYCLE
+ path2files=ADJUST_PATH (root,project)
+ files=FILE_NAMES (-,$path2files), xmlfiles=FILTER (files," *.xml ",-)
+ LOOP n,xmlfile=xmlfiles
+  n=CENTER (n,+3,"0")
+  tffile=CONCAT ("xml2rtf",n,".tf"), rtffile=EXCHANGE (xmlfile,"|.xml|.rtf|")
+  path2rtffile =ADJUST_PATH (path2files,rtffile)
+  path2tffile  =ADJUST_PATH (path2files,tffile)
+  path2xmlfile =ADJUST_PATH (path2files,xmlfile)
+  DEFINE "tffile"  = path2tffile
+  DEFINE "rtffile" = path2rtffile
+  tffile="tffile", rtffile="rtffile"
+  status=CREATE (tffile,SEQ-o,-), status=CREATE (rtffile,FDF-o,-)
+  status=READ   (path2xmlfile,xmldaten,UTF8)
+  ACCESS q: READ/VARIABLE/STREAM     xmldaten s,a+t+e,typ,stack,stack_num
+  ACCESS z: WRITE/FILE/ERASE/STREAM  tffile   s.z/u, a+t+e
+   INCLUDE "skripte" bereiteauf
+  ENDACCESS q
+  ENDACCESS z
+  EXECUTE #*export,{tffile},{rtffile},lo=+,de=tei.def
+  status=CLOSE (rtffile), status=CLOSE (tffile)
+ ENDLOOP
+ENDLOOP</code></pre> <p class="x-small right"
+                    >Segment <code>ex_xml2rtf</code> aus <code>-*skripte</code></p> 
+                
+            </div>
+          <!--  <div class="step">
+                <h2 class="red">TUSCRIPT</h2> <pre><code></code></pre> <p class="x-small right"
+                    >Segment <code>basis01</code> aus <code>-*skripte</code></p> 
+                <h2 class="red">Ergebnis</h2> 
+                <pre><code></code></pre>
+            </div>-->
+            <div class="step">
+            <h1 class="red">*eof</h1> </div>
+                                .
+                                
+                     
+                        
+                
+                
+           
+            <div class="step"> <h4>Software (Präsentation)</h4> <ul
+            class="small line-height-one-five even-left"> <li> <a
+            href="https://github.com/impress/impress.js" target="_blank">Impress.js</a>
+                    (presentation) </li> <li> <a href=""></a> </li> <li> <a
+            href="https://github.com/dimsemenov/Magnific-Popup" target="_blank"
+            >Magnific Popup</a>
+                    (Lightbox) </li> <li> <a href="http://unitegallery.net/"
+            target="_blank">Unite Gallery</a> (photo gallery) </li> </ul> </div> </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script src="resources/js/unite.gallery.js"></script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();</script>    
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                hashnav: true
+            });</script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+            var obj = impress();
+            obj.init();
+            initSlideNo(obj);</script>
+        <!--<script>
+            var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+        </script>-->
+        <script>
+            var videos = document.getElementsByTagName("video");
+            Array.prototype.forEach.call(videos, function (video) {
+                var videoStep = video.closest(".step");
+                videoStep.addEventListener("impress:stepenter", function () {
+                    video.play();
+                },
+                false);
+                videoStep.addEventListener("impress:stepleave", function () {
+                    video.pause();
+                },
+                false);
+            });</script>
+       
+    </body>
+</html>
