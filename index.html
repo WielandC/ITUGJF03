@@ -86,8 +86,42 @@
             class="mfp-lightbox even-left"> <a href="resources/img/finder.png"> <img
             src="resources/img/finder.png" alt="finder"> </a> </figure> </div> <div
             class="eight columns"> <ul class="line-height-one-five even-left ">
-            <li>Mit dem Standardmakro <code>#*desi</code> können den Systemvariablen <code>TUSTEP_DSK</code> und <code>TUSTEP_SCR</code> mit <q> ungültige Dateinamen</q> zugewiesen werden.</li>
-            </ul> </div> </div> </div> <div class="step">
+            <li>Mit dem Standardmakro <code>#*desi</code> können den Systemvariablen <code>TUSTEP_DSK</code> und <code>TUSTEP_SCR</code> mit <q> ungültige Projektnamen</q> zugewiesen werden.</li>
+                <li><table><tr><td><code>TUSTEP_DSK</code></td><td><code>~/Projekte/#1</code></td></tr>
+                <tr><td><code>TUSTEP_SCR</code></td><td><code>~/Projekte/#1/#1scr_</code></td></tr></table></li>
+            </ul> </div> </div> </div> 
+            <div class="step">
+                
+                <div class="row">
+                    <div class="eight columns">
+                        <dl  class="medium">
+                            <dt class="red">
+                                Datei mit definierten Dateinamen 
+                            </dt>
+                            <dd><code>#da,meine_aliase,seq-ap</code></dd>
+                            <dt class="red">Datei edieren</dt>
+                            <dd><code>#ed,meine_aliase</code></dd>
+                            <dd><code>alias=~/Downloads/impress/ITUGJF02/#2_material/1A-</code></dd>
+                            <dt class="red">Datei definieren</dt>
+                            <dd><code>#de,dateinamen=meine_aliase</code></dd>
+                            <dt class="red">Information über definierte Dateinamen</dt>
+                            <dd><code>#in,dateinamen=+</code></dd>
+                            <dt class="red">Alias-Datei anlegen, bearbeiten, …</dt>
+                            <dd><code>#da,alias,seq-ap,tr=-</code></dd>
+                            <dt class="red">Definierte Dateinamen löschen</dt>
+                            <dd><code>#de,dateinamen=-</code></dd>
+                        </dl>
+                    </div>
+                    <div class="four columns">
+                        <figure class="mfp-lightbox"><a href="resources/img/li,1,meine_aliase.png"><img src="resources/img/li,1,meine_aliase.png" alt="Definierte Dateinamen"></a></figure>
+                        
+                        <figure class="mfp-lightbox"><a href="resources/img/in_dateinamen.png"><img src="resources/img/in_dateinamen.png" alt="Definierte Dateinamen"></a></figure>
+                        <figure class="mfp-lightbox"><a href="resources/img/de_dateinamen.png"><img src="resources/img/de_dateinamen.png" alt="Definierte Dateinamen"></a></figure>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="step">
             <!--<h2 class="red">Arbeitsumgebung </h2>
                     <pre><code>$ pwd
 /Users/air11neu/Downloads/impress/itugJF02
@@ -97,7 +131,8 @@
 │   ├── Q.01.19140115.FMA.01.xml
 │   └── Q.01.19140518.GAP.01.xml
 ├── 02.periodicals
-├── 04\ ein\ wahrlich\ schau3rl!cherDateiname.01.xml
+├── 04\ ein\ wahrlich\ schau3rl!cherDateiname.01
+
 ├── scr
 ├── skripte
 ├── tei.def
