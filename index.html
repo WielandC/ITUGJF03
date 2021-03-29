@@ -150,12 +150,12 @@ newproject   ="2021-03-31"
 
 path2project =ADJUST_PATH(root,newproject)
 DEFINE path2project = path2project
-status=CREATE ("-",PROJECT,path2project)</code></pre> <p class="x-small right"
+ERROR/STOP CREATE ("-",PROJECT,path2project)</code></pre> <p class="x-small right"
             >Segment <code>basis03</code> aus <code>-*skripte</code></p> <h2 class="red"
             >Ergebnis</h2> <pre><code>   6    00  path2project =ADJUST_PATH(root,newproject)
 path2project = ~/Downloads/impress/ITUGJF02/#2_material/2021-03-31
    7    00  DEFINE path2project = path2project
-   8    00  status=CREATE ("-",PROJECT,path2project)
+   8    00  ERROR/STOP TOP CREATE ("-",PROJECT,path2project)
 status       = OK</code></pre> </div> 
             <div class="step"> <h2 class="red">TUSCRIPT</h2>
             <pre><code>$$ MODE TUSCRIPT,{}
@@ -168,14 +168,14 @@ newname="001 log.txt"
 path2file=ADJUST_PATH (path2project,newname)
 DEFINE "path2file" = path2file
 txtfile="path2file"
-status=CREATE (txtfile,FDF-o,-)</code></pre> <p class="x-small right"
+ERROR/STOP CREATE (txtfile,FDF-o,-)</code></pre> <p class="x-small right"
             >Segment <code>basis04</code> aus <code>-*skripte</code></p> <h2 class="red"
             >Ergebnis</h2> <pre><code>   9    00  path2file=ADJUST_PATH (path2project,newname)
 path2file    = ~/Downloads/impress/ITUGJF02/#2_material/2021-03-31/001 log.txt
   10    00  DEFINE "path2file" = path2file
   11    00  txtfile="path2file"
 txtfile      = path2file
-  12    00  status=CREATE (txtfile,FDF-o,-)
+  12    00  ERROR/STOP CREATE (txtfile,FDF-o,-)
 status       = OK</code></pre> </div> <div class="step"><div class="row"> <div
             class="seven columns"><h2 class="red">TUSCRIPT</h2> <pre><code>$$ MODE TUSCRIPT,{}
 
@@ -187,10 +187,10 @@ newname="001 log.txt"
 path2file=ADJUST_PATH (path2project,newname)
 DEFINE "path2file" = path2file
 txtfile="path2file"
-status=CREATE (txtfile,FDF-o,-)
+ERROR/STOP CREATE (txtfile,FDF-o,-)
 
 FILE/ERASE/UTF8 $txtfile = "äöü"
-status=CLOSE (txtfile)</code></pre> <p class="x-small right"
+ERROR/STOP CLOSE (txtfile)</code></pre> <p class="x-small right"
             >Segment <code>basis05</code> aus <code>-*skripte</code></p></div><div
             class="five columns"><figure class="mfp-lightbox even-left down-100"><a
             href="resources/img/FILEERASE.png"><img src="resources/img/FILEERASE.png"
@@ -207,7 +207,7 @@ newname="001 log.tf"
 path2tffile=ADJUST_PATH (path2project,newname)
 DEFINE "tffile" = path2tffile
 tffile="tffile"
-status=CREATE (tffile,SEQ-o,-)</code></pre> <p class="x-small right"
+ERROR/STOP CREATE (tffile,SEQ-o,-)</code></pre> <p class="x-small right"
             >Segment <code>basis06</code> aus <code>-*skripte</code></p></div> 
                 <div
             class="five columns">
@@ -244,8 +244,8 @@ LOOP project=projects
   path2rtffile=ADJUST_PATH (path2files,rtffile)
   DEFINE "rtffile" = path2rtffile
   rtffile="rtffile"
-  status=CREATE (rtffile,FDF-o,-)
-  status=CLOSE  (rtffile)
+  ERROR/STOP CREATE (rtffile,FDF-o,-)
+  ERROR/STOP CLOSE  (rtffile)
  ENDLOOP
 ENDLOOP</code></pre> <p class="x-small right"
             >Segment <code>projectfiles</code> aus <code>-*skripte</code></p></div><div
@@ -253,7 +253,7 @@ ENDLOOP</code></pre> <p class="x-small right"
             href="resources/img/loop_create.png"><img src="resources/img/loop_create.png"
             alt="LOOP CREATE"></a></figure> </div> </div></div> <div class="step">
             <pre><code>$$ MODE TUSCRIPT,{}
-status=OPEN ("tei.def",WRITE,-std-)
+ERROR/STOP OPEN ("tei.def",WRITE,-std-)
 FETCH root = TUSTEP_DSK
 projects=PROJECT_NAMES ($root)
 LOOP project=projects
@@ -269,15 +269,15 @@ LOOP project=projects
   DEFINE "tffile"  = path2tffile
   DEFINE "rtffile" = path2rtffile
   tffile="tffile", rtffile="rtffile"
-  status=CREATE (tffile,SEQ-o,-), status=CREATE (rtffile,FDF-o,-)
-  status=READ   (path2xmlfile,xmldaten,UTF8)
+  ERROR/STOP CREATE (tffile,SEQ-o,-), ERROR/STOP CREATE (rtffile,FDF-o,-)
+  ERROR/STOP READ   (path2xmlfile,xmldaten,UTF8)
   ACCESS q: READ/VARIABLE/STREAM     xmldaten s,a+t+e,typ,stack,stack_num
   ACCESS z: WRITE/FILE/ERASE/STREAM  tffile   s.z/u, a+t+e
    INCLUDE "skripte" bereiteauf
   ENDACCESS q
   ENDACCESS z
   EXECUTE #*export,{tffile},{rtffile},lo=+,de=tei.def
-  status=CLOSE (rtffile), status=CLOSE (tffile)
+  ERROR/STOP CLOSE (rtffile), ERROR/STOP CLOSE (tffile)
  ENDLOOP
 ENDLOOP</code></pre> <p class="x-small right"
             >Segment <code>ex_xml2rtf</code> aus <code>-*skripte</code></p> </div>
