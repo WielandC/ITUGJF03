@@ -139,8 +139,8 @@
 └── tustep.ini
 
 3 directories, 6 files
-</code></pre> <p class="x-small right">Download <a href="http://github.com/itug/"
-            >github</a></p> </div> <div class="step"> <dl><dt class="red"
+</code></pre> <p class="x-small right">Die Beispieldateien und Skripte stehen auf  <a href="http://github.com/itug/" target="_blank"
+            >github</a> zum Download bereit</p> </div> <div class="step"> <dl><dt class="red"
             >#liste,variable,po=TUSTEP_DSK'TUSTEP_SCR</dt><dd>
             <pre><code>****  Mögliche System-Variablen
       TUSTEP_DSK           ~/Downloads/impress/ITUGJF02/#2_material
@@ -164,7 +164,7 @@ projects     = SCR</code></pre> </div> <div class="step"> <h2 class="red">TUSCRI
 FETCH root = TUSTEP_DSK
 files      = FILE_NAMES    (-,$root)
 projects   = PROJECT_NAMES ($root)</code></pre> <p class="x-small right"
-            >Segment <code>basis02</code> aus <code>-*skripte</code></p> <h2 class="red"
+            >Segment <code>basis02</code> aus <code>-*skripte</code></p> <h2 class="red up-50"
             >Ergebnis</h2> <pre><code>   3    00  FETCH root = TUSTEP_DSK
 root         = ~/Downloads/impress/ITUGJF02/#2_material
    4    00  files      = FILE_NAMES    (-,$root)
@@ -204,7 +204,7 @@ path2file=ADJUST_PATH (path2project,newname)
 DEFINE "path2file" = path2file
 txtfile="path2file"
 ERROR/STOP CREATE (txtfile,FDF-o,-)</code></pre> <p class="x-small right"
-            >Segment <code>basis04</code> aus <code>-*skripte</code></p> <h2 class="red"
+            >Segment <code>basis04</code> aus <code>-*skripte</code></p> <h2 class="red up-50"
             >Ergebnis</h2> <pre><code>   9    00  path2file=ADJUST_PATH (path2project,newname)
 path2file    = ~/Downloads/impress/ITUGJF02/#2_material/2021-03-31/001 log.txt
   10    00  DEFINE "path2file" = path2file
@@ -314,7 +314,7 @@ LOOP project=projects
   EXECUTE #*export,{tffile},{rtffile},lo=+,de=tei.def
   ERROR/STOP CLOSE (rtffile), ERROR/STOP CLOSE (tffile)
  ENDLOOP
-ENDLOOP</code></pre> <p class="x-small right"
+ENDLOOP</code></pre> <p class="x-small right up-25"
             >Segment <code>ex_xml2rtf</code> aus <code>-*skripte</code></p> </div>
             <!--  <div class="step">
                 <h2 class="red">TUSCRIPT</h2> <pre><code></code></pre> <p class="x-small right"
