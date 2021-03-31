@@ -1,2 +1,7 @@
 .DS_Store
+#2_material/tffile
+#2_material/skripte_alt
+#2_material/scr/
 #2_material/scr/*.tsf
+#2_material/01.letters/*.tf
+#2_material/01.letters/*.rtf
